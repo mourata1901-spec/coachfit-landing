@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CoachFit — Personal Fitness Coach</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Montserrat:wght@600;800&family=Orbitron:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="nav">
+    <div class="container">
+      <div class="brand">CoachFit</div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#results">Results</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="btn">Book a Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>Get Fit. Stay Consistent. <span>Train Smarter.</span></h1>
+        <p>1:1 coaching tailored to your goals — fat loss, muscle gain, or performance. Programs that fit your schedule and keep you accountable.</p>
+        <div class="cta-row">
+          <a href="#contact" class="btn primary">Start Free Assessment</a>
+          <a href="#services" class="btn ghost">See How It Works</a>
+        </div>
+        <p class="trust">Trusted by 150+ clients • NASM Certified • 4.9★ average</p>
+      </div>
+      <div class="hero-card">
+        <div class="stat">
+          <strong>12w</strong>
+          <span>avg. program</span>
+        </div>
+        <div class="stat">
+          <strong>–7.4kg</strong>
+          <span>avg. fat loss</span>
+        </div>
+        <div class="stat">
+          <strong>+18%</strong>
+          <span>strength gain</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Custom Training Plan</h3>
+          <p>Periodized workouts tailored to your level, equipment, and goals — updated every 2–4 weeks.</p>
+        </article>
+        <article class="card">
+          <h3>Nutrition Guidance</h3>
+          <p>Simple, sustainable nutrition targets with weekly check-ins and habit coaching.</p>
+        </article>
+        <article class="card">
+          <h3>Accountability & Chat</h3>
+          <p>Direct chat, form checks, and video tips so you stay consistent and injury-free.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="results" class="section alt">
+    <div class="container">
+      <h2>Client Results</h2>
+
+      
+      <div class="testis slider" data-autoplay="true" data-interval="4200">
+        <button class="slide-nav prev" aria-label="Previous">‹</button>
+        <div class="slides">
+          <blockquote>
+            “Lost 8kg in 10 weeks and finally kept it off. The plan fit my crazy schedule.”
+            <cite>— Laura M.</cite>
+          </blockquote>
+          <blockquote>
+            “We focused on consistency first. PRs came naturally after 6 weeks.”
+            <cite>— Daniel P.</cite>
+          </blockquote>
+          <blockquote>
+            “Best remote coach I’ve had. Clear cues, quick feedback, zero fluff.”
+            <cite>— Chris A.</cite>
+          </blockquote>
+        </div>
+        <button class="slide-nav next" aria-label="Next">›</button>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="pricing" class="section">
+    <div class="container">
+      <h2>Pricing</h2>
+
+      
+      <div class="billing-toggle" aria-label="Billing period">
+        <button class="toggle-btn" data-billing="monthly" aria-pressed="true">Monthly</button>
+        <button class="toggle-btn" data-billing="yearly" aria-pressed="false">Yearly <span class="save">save 20%</span></button>
+      </div>
+
+      <div class="pricing">
+        <div class="price-card">
+          <h3>Starter</h3>
+          <p class="price" data-monthly="149" data-yearly="119">$149<span>/mo</span></p>
+          <ul>
+            <li>Personalized plan</li>
+            <li>Bi-weekly check-ins</li>
+            <li>Email support</li>
+          </ul>
+          <a href="#contact" class="btn primary">Choose Starter</a>
+        </div>
+
+        <div class="price-card featured">
+          <h3>Pro</h3>
+          <p class="price" data-monthly="249" data-yearly="199">$249<span>/mo</span></p>
+          <ul>
+            <li>Everything in Starter</li>
+            <li>Weekly check-ins</li>
+            <li>Video form reviews</li>
+            <li>Priority chat</li>
+          </ul>
+          <a href="#contact" class="btn primary">Choose Pro</a>
+        </div>
+
+        <div class="price-card">
+          <h3>Elite</h3>
+          <p class="price" data-monthly="399" data-yearly="319">$399<span>/mo</span></p>
+          <ul>
+            <li>Daily accountability</li>
+            <li>Custom macros + meal ideas</li>
+            <li>Unlimited video feedback</li>
+          </ul>
+          <a href="#contact" class="btn primary">Choose Elite</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Free Assessment</h2>
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Submitted! (mock)');">
+        <input type="text" placeholder="Full name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Goal (e.g., lose 6kg, gain strength)" required>
+        <button class="btn primary" type="submit">Book 15-min Call</button>
+      </form>
+      <p class="micro">No hard sales. We’ll map your next 4 weeks and you decide.</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 CoachFit. All rights reserved.</p>
+    </div>
+  </footer>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
